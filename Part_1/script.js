@@ -1,8 +1,8 @@
 //Variable Declare
 var firstVar;
 var secondVar, thirdVar, fourthVar, fifthVar, sixthVar, seventhVar,
-    eigthVar, ninthVar, tenthVar, eleventhVar, twelfthVar,
-    thirtheenthVar, fourteenthVar, fifteenthvar;
+    eighthVar, ninthVar, tenthVar, eleventhVar, twelfthVar,
+    thirteenthVar, fourteenthVar, fifteenthVar;
 
 //Variable assign & primitives
 firstVar = "B";
@@ -12,23 +12,35 @@ fourthVar = true;
 fifthVar = "bee";
 sixthVar = 2;
 seventhVar = false;
-eigthVar = "c";
+eighthVar = "c";
 ninthVar = 3;
-tenthVar = NaN;
+tenthVar = "Z";
 eleventhVar = "d";
 twelfthVar = 4.384937;
-thirtheenthVar = null;
+thirteenthVar = -5;
 fourteenthVar = "e";
 fifteenthvar = 593746283658263867;
 
 //Reassign
 tenthVar = "f";
-thirtheenthVar = 6;
+thirteenthVar = 6;
 
 console.log(firstVar, secondVar);
 
-var c = firstVar;
+var variableSwap = firstVar;
 firstVar = secondVar;
-secondVar = c;
+secondVar = variableSwap;
 
 console.log(firstVar, secondVar);
+
+//Introspection
+function listProperties(obj) {
+    var propList = "";
+    for (var propName in obj) {
+        if (typeof(obj[propName]) != "undefined") {
+            propList += (propName + ", ");
+        }
+    }
+    console.log(propList);
+}
+listProperties(fifthVar);
