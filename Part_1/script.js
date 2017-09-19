@@ -19,7 +19,7 @@ eleventhVar = "d";
 twelfthVar = 4.384937;
 thirteenthVar = -5;
 fourteenthVar = "e";
-fifteenthvar = 593746283658263867;
+fifteenthVar = 593746283658263867;
 
 //Reassign
 tenthVar = "f";
@@ -34,13 +34,10 @@ secondVar = variableSwap;
 console.log(firstVar, secondVar);
 
 //Introspection
-function listProperties(obj) {
-    var propList = "";
-    for (var propName in obj) {
-        if (typeof(obj[propName]) != "undefined") {
-            propList += (propName + ", ");
-        }
-    }
-    console.log(propList);
+var allVariables = [secondVar, thirdVar, fourthVar, fifthVar, sixthVar, seventhVar,
+    eighthVar, ninthVar, tenthVar, eleventhVar, twelfthVar,
+    thirteenthVar, fourteenthVar, fifteenthVar];
+
+for (var i = 0; i < allVariables.length; i++){
+    console.log(typeof(allVariables[i]));
 }
-listProperties(fifthVar);
