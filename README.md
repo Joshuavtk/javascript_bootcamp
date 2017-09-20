@@ -1,3 +1,3 @@
-`Javascript bootcamp opdracht.`
+**Javascript bootcamp opdracht.**
 
 *Gemaakt door Joshua van 't Kruis* 
