@@ -69,4 +69,5 @@ console.log(thirdVar);
 sixteenthVar += thirteenthVar;
 console.log(sixteenthVar);
 
+//Introspection part 2
 console.log(typeof(sixteenthVar));
